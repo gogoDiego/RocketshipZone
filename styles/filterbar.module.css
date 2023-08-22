@@ -1,0 +1,129 @@
+
+
+.filterbardiv{
+
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    margin-top: 25px;
+
+    outline: solid red 2px;
+}
+
+.filterbar{
+
+    display: flex;
+    position: relative;
+
+    width: 70vw;
+    height: 50px;
+
+}
+
+
+.navigation{
+
+    display: flex;
+    position: relative;
+
+
+    height: 50px;
+    margin-left: auto;
+
+
+}
+
+.filtering{
+
+    display: flex;
+    position: relative;
+
+    height: 50px;
+
+    margin-right: auto;
+
+}
+
+
+.pagenav{
+
+    width: 150px;
+    height: 50px;
+
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.pagenav > p {
+
+    font-size: 28px;
+    text-align: center;
+    color: white;
+
+    font-weight: 900;
+
+}
+
+
+.displaysetting{
+
+    outline: solid 2px white;
+    background-color: black;
+    border-radius: 10px;
+
+    display: flex;
+    position: relative;
+
+    width: 90px;
+    height: 30px;
+
+
+
+}
+
+.displaytype {
+
+    display: flex;
+    position: relative;
+
+    width: 30px;
+    height: 30px;
+    
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.rowicondiv, .appicondiv{
+    /* width: 30px;
+    height: 30px; */
+    border-right: 1px solid white;
+}
+
+.displaytypeicon{
+
+
+    filter: invert(1);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rowicon,.appicon {
+    height: 15px;
+}
+
+.articleicon{
+    height: 30px;
+}
+
+

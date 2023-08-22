@@ -1,0 +1,393 @@
+
+
+
+.dashcontent {
+
+    display: block;
+    position: relative;
+  
+}
+
+.overviewDash{
+
+    display: block;
+    position: relative;
+  
+    height: 295px;
+    width: 45%;
+  
+    margin-top: 6px;
+    padding-top: 6px;
+    /* overflow-y: visible; */
+    overflow: hidden;
+    /* overflow-y: inherit; */
+    /* overflow-y: unset; */
+  
+    margin-right: -8px;
+  
+  
+  
+  }
+
+
+  
+
+
+
+.IBCSubtitle{
+
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 5px;
+  /* padding-left: 12px; */
+  margin-inline: 12px;
+
+  height: 60px;
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--DashboardSubtitleTextColor);
+  background-color: var(--ibcTopTriangle);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  }
+  
+  .IBCSub{
+  
+    margin: 0px;
+    height: 42px;
+    flex: 1; /* Expand to fill remaining space */
+    display: flex;
+    align-items: center;
+
+  }
+
+
+  .IBCSetting{
+
+    display: flex;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    justify-content: flex-end;
+    filter: invert();
+  
+  }
+
+
+
+  .glassCover{
+
+    display: flex;
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 2;
+
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 800;
+
+
+    background-color: rgba(255, 255, 255, 0.25); /* Transparent white background */
+    backdrop-filter: blur(15px); /* Blurring effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow */
+
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+
+  .comingSoon{
+    margin: 0px !important;
+  }
+
+
+.circle{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  background-color: silver;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  outline: solid rgb(106, 106, 106) 1px;
+
+}
+
+.topLeftC {
+  top: 12px;
+  left: 12px;
+}
+
+.topRightC {
+  top: 12px;
+  right: 12px;
+}
+
+.bottomLeftC {
+  bottom: 12px;
+  left: 12px;
+}
+
+.bottomRightC {
+  bottom: 12px;
+  right: 12px;
+}
+
+
+
+
+  .bridgeDiv{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+    background-color: #462ADF;
+
+    height: 100%;
+    width: 100%;
+
+
+    
+
+  }
+
+
+
+
+
+.IBCFromDiv{
+
+  display: block;
+  position: relative;
+
+  width: calc(100% - 24px);
+
+  margin-inline: 12px;
+
+  padding: 6px;
+  border-radius: 6px;
+
+
+  background-color: #2d2755;
+  outline: solid #756b95 1px;
+
+
+}
+
+.IBCChainSelector{
+
+  display: flex;
+  position: relative;
+
+  height: 50px;
+  width: calc(100% - 24px);
+
+  align-items: center;
+  margin: 12px;
+
+
+  background-color:  #3c356d;
+  outline: solid #756b95 1px;
+  border-radius: 6px;
+
+}
+
+
+.IBCChainFromDiv{
+
+  display: flex;
+  position: relative;
+
+  width: 50%;
+  align-items: center;
+
+  text-align: center;
+
+  padding-inline-end: 12px;
+
+
+}
+
+.fromchain{
+  justify-content: flex-start;
+
+
+}
+
+.destinationchain{
+  justify-content: flex-end;
+
+
+}
+
+
+
+
+
+.selectChain{
+
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  line-height: 50px;
+
+
+}
+
+
+.IBCdownarrowicon{
+
+  width: 35px;
+  height: 35px;
+  margin-inline: 3px;
+
+  filter: invert();
+
+}
+
+
+.IBCAsseticon{
+
+  width: 35px;
+  height: 35px;
+
+
+}
+
+
+.IBCAssetAmountFromDiv{
+
+  display: flex;
+  position: relative;
+
+  
+
+  width: calc(100% - 24px);
+  margin: 12px;
+
+  border-radius: 2px;
+  outline: solid #756b95 1px;
+
+
+  background-color: #3c356d;
+
+
+}
+
+
+.IBCAssetDiv{
+
+  display: flex;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+
+
+
+
+  /* outline: solid #756b95 1px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px; */
+
+}
+ 
+.IBCAmountDiv{
+
+  display: flex;
+  position: relative;
+
+  height: 50px;
+  width: 100%;
+
+  align-items: center;
+
+
+  /* outline: solid #756b95 1px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px; */
+
+
+}
+
+.IBCSwitchChains{
+
+display: flex;
+position: relative;
+
+width: 35px;
+height: 35px;
+
+
+justify-content: center;
+align-items: center;
+
+border-radius: 50%;
+
+
+}
+
+.SwitchChainIcon{
+
+  width: 20px;
+  height: 20px;
+  filter: invert();
+
+}
+
+
+
+
+.IBCSwitchChains:hover{
+
+  outline: 1px solid #756b95 ;
+  background-color: #2d2755;
+
+
+}
+
+
+.StartBridging{
+
+  /* display: flex;
+  position: relative;
+
+  width: 100%;
+  height: 50px;
+
+  background-color: aqua; */
+
+  display: flex;
+  position: relative;
+
+  width: calc(100% - 24px);
+  height: 100%;
+
+  /* margin-inline: 12px; */
+  margin: 12px;
+
+  padding: 6px;
+  border-radius: 6px;
+
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+
+
+  background-color: #2d2755;
+  outline: solid #756b95 1px;
+
+}

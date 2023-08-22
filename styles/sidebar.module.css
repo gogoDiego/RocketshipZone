@@ -1,0 +1,79 @@
+
+
+
+
+.sidebardiv{
+    display: block;
+    position: fixed;
+    top: 33%;
+    z-index: 2;
+}
+
+
+.sidebar{
+
+    display: flex;
+    position: relative;
+
+    flex-direction: column;
+
+    /* justify-content: center; */
+    align-items: center;
+
+    width: 60px;
+
+    background: var(--dashContentBackground);
+    /* border: 1px solid var(--dashboardOutline); */
+
+
+    border-top-right-radius: 12px; 
+    border-bottom-right-radius: 12px;
+
+    border-top: 1px solid var(--dashboardOutline);
+    border-right: 1px solid var(--dashboardOutline);
+    border-bottom: 1px solid var(--dashboardOutline);
+
+
+}
+
+
+
+.homeIcon{
+
+    filter: invert();
+    width: 40px;
+    height: 40px;
+
+    margin: 5px;
+
+}
+
+.StrategyIcon{
+
+    filter: invert();
+    width: 35px;
+    height: 35px;
+
+    margin: 5px;
+}
+
+.sidebarHr{
+
+    display: flex;
+    position: relative;
+
+    width: 40px;
+    border: 2px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.sidebarApp{
+
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.276) 0%, transparent 75%);
+
+}

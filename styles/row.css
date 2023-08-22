@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.appExploreDiv{
+
+
+    display: flex;
+    position: relative;
+
+    width: 70vw;
+
+}
+
+
+.rowsdiv{
+
+    display: block;
+    position: relative;
+  
+    width: 70vw;
+    padding-inline: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    border-radius: 5px;
+
+    background-color: gray;
+
+}
+
+
+.toptitlerow{
+
+    display: flex;
+    position: relative;
+
+    height: 50px;
+
+}
+
+.rowTitle{
+    display: flex;
+    position: relative;
+
+    font-size: 18px;
+    height: 50px;
+
+    width: 100%;
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: rgba(0, 0, 0, 0.50);
+
+    font-family: phonk;
+
+
+}
+
+.rowRank{
+
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+
+    width: 200px;
+
+}
+
+.rowName{
+
+}
+
+.rowCategory{
+
+}
+
+.rowPrice{
+
+}
+
+.rowChange{
+
+}
+
+.rowTvl{
+
+}
+
+.rowMarketCap{
+
+}
+
+.plusicon{
+
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.plusicon > img{
+
+    height: 25px;
+    opacity: 50%;
+}
+
+.rowitem{
+
+    display: flex;
+    position: relative;
+
+    height: 40px;
+
+
+}
+
+.rowItemTitle{
+
+    display: flex;
+    position: relative;
+
+    font-size: 18px;
+
+
+    height: 40px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+
+}
+
+.rowItemRank{
+    width: 200px;
+}
+
+.rowItemNamediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.rowItemName{
+    margin: 0px;
+}
+
+.rowItemLogo {
+    width: 35px;
+}
+
+/* .rowItemCategory {
+}
+.rowItemPrice {
+}
+.rowItemTvl {
+}
+.rowItemMarketCap {
+}
+.rowItemBookmarket {
+} */
+
+
+.rowItemBookmarket{
+
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+
+}
+
+.rowItemBookmarket > img {
+
+    height: 20px;
+    opacity: 50%;
+}

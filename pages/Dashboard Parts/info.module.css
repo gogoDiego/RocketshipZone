@@ -1,0 +1,265 @@
+
+
+.dashcontent {
+
+    display: block;
+    position: relative;
+  
+}
+
+
+.dashContentDiv {
+
+    display: flex;
+    position: relative;
+  
+    /* height: calc(100% - 95px); */
+    height: 100%;
+    width: 100%;  
+  
+    outline: solid 1px var(--dashContentOutline);
+    background: var(--dashContentBackground);
+  
+    /* border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; */
+  
+    margin: 0px !important;
+    padding: 0px !important;
+  
+    /* overflow:visible; */
+  
+    overflow-y: scroll;
+  
+  }
+
+
+
+  .InfoReadingresources{
+
+    display: block;
+    position: relative;
+
+    width: 100%;
+    height: 280px;
+
+    padding: 12px;
+
+
+  }
+
+
+  .tableandtext{
+    position: relative;
+    display: flex;
+
+    width: 100%;
+  }
+
+  .tableContentsBullet{
+
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px !important;
+
+  }
+
+  .tableContentsBullet1{
+
+    display: flex;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px !important;
+    background-color: #462ADF;
+    border: 1px solid var(--DashboardChartOutlineColor);
+    font-weight: 600;
+    margin: 0px !important;
+
+    border-radius: 3px;
+
+  }
+
+
+
+  .InfoTitle{
+    margin: 0px !important;
+    padding-inline: 6px;
+  }
+
+  .infotitleArrow{
+    border-left: white solid 2px;
+    height: 100%;
+  }
+
+
+  .infoprojectResources{
+
+
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    float: right;
+
+    margin-left: auto; /* Push the div to the right */
+    align-items: center;
+
+    height: 50px;
+
+
+  /* outline: solid red 2px; */
+
+  
+  }
+
+
+  .slideFadedescription{
+
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to bottom, transparent, #2d2755);
+    pointer-events: none; /* This makes the element non-clickable */
+
+    z-index: 2;
+
+  }
+
+  .ResourceSlideDescription{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+
+    padding: 12px;
+
+    font-size: 16px;
+    font-weight: 700;
+    /* font-family: phonk; */
+
+
+  }
+
+
+.verticalSelctionsSlider{
+
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+  
+    height: 100%;
+    width: 50px;
+  
+  
+  }
+  
+
+
+
+  .infoResourcesSlide{
+    display: block;
+    position: relative;
+    width: min-content;
+    height: 280px;
+    margin: 12px;
+    margin-left: auto; /* Push the div to the right */
+
+  }
+
+
+  .Displayingslide{
+
+    display: flex;
+    position: relative;
+
+    height: 100%;
+    width: 500px;
+
+    border-right: var(--dashboardOutline) solid 2px;
+
+
+
+  }
+
+  .ResourceSlideShow{
+
+    display: flex;
+    position: relative;
+
+    width: min-content;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    border: var(--dashboardOutline) solid 2px;
+    border-radius: 6px;
+
+    overflow: hidden;
+
+  }
+
+
+
+  .resourcesIcon{
+    width: 30px;
+    height: 30px;
+  
+    margin-inline: 5px ;
+  
+    filter: invert();
+  
+  }
+
+
+  .resourceTile{
+
+
+    display: flex;
+    position: relative;
+  
+  
+    width: 35px;
+    height: 35px;
+  
+    margin-top: 5px;
+    margin-bottom: 5px;
+  
+  
+    background-color: #462ADF;
+  
+    border-radius: 3px;
+    border: 1px solid #756b95;
+  
+  
+  }
+  
+
+  .upArrow{
+    rotate: 180deg;
+  }
+
+  .downArrowIcon {
+    width: 20px;
+    height: 20px;
+    filter: invert();
+  }
+
+  .flipped{
+    rotate: 180deg;
+  }
+
+  .flop{
+    rotate: -90deg;
+  }

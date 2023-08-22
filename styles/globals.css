@@ -1,0 +1,376 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+
+@font-face {
+  font-family: "Phonk";
+  src: url(/src/fonts/phonkfontreg.otf);
+  }
+
+:root{
+
+  /* transition: background 1s ease, color 1s ease; */
+
+  /* Header */
+  /* --backgroundHeader: linear-gradient(90deg,#fe3434,#ff7728); */
+  /* --backgroundHeader: linear-gradient(90deg,#eb5d47,#a933b2); */
+
+  /* --backgroundHeader: #2d2755; */
+
+
+  /* --HeaderOutline: #a4f9ff; */
+
+  /* Rocketship Logo & typeface */
+  /* --RocketshipRocket: white; */
+  /* --RocketshipTypeface:  white; */
+
+  /* top nav buttons */
+  /* --navbtn: white; */
+  /* --navbtnOutline: white; */
+  /* --navbtnborderbottom: white; */
+  /* --navbtnbackground: black; */
+
+  /* Search Bar */
+  /* --searchbarBackground: black; */
+  /* --searchInputFontColor: white; */
+  /* --searchInputBackground: black; */
+  /* --searchIcon: white; */
+
+  /* Menu */
+  /* --menuIcon: white; */
+
+  /* Main body */
+  /* --mainbodyBackground : #170f34; */
+
+    
+  /* --dashboardOutline: #756b95;
+  --dashboardFontColor: white;
+  --dashboardBackground: #2d2755;
+  --dashSelectedNavUnderline: #756b95;
+  --dashContentOutline: #756b95;
+  --dashContentBackground: #3c356c;
+
+  --DashboardSubtitleTextColor: #FFF;
+  --DashboardEstTextColor: rgba(255, 255, 255, 0.253);
+
+  --DashboardTagTextColor: #FFF;
+  --DashboardTagBackgroundColor: #462ADF;
+  --DashboardTagOutlineColor: #756b95;
+
+
+  --DashboardTokenOverviewDividerColor: #756b95;
+  --DashboardTokenStatsNumberColor: #FFF;
+  --DashboardTokenStatsSubtitleColor: rgba(255, 255, 255, 0.753);
+  --DashboardTokenTickerColor: #fff;
+
+
+  --DashboardChartOutlineColor: #756b95;
+
+
+  --DashboardReadMoreContentTextColor: #FFF;
+  --DashboardReadMoreTextColor: #fff;
+  --DashboardReadMoreBackgroundColor: #2d2755;
+  --DashboardReadMoreDivTopBorderColor: #756b95; */
+
+
+  --dashboardOutline: #756b95;
+  --dashboardFontColor: white;
+  --dashboardBackground: #2d2755;
+  --dashSelectedNavUnderline: #756b95;
+  --dashContentOutline: #756b95;
+  --dashContentBackground: #3c356c;
+
+  --DashboardSubtitleTextColor: #FFF;
+  --DashboardEstTextColor: rgba(255, 255, 255, 0.253);
+
+  --DashboardTagTextColor: #FFF;
+  --DashboardTagBackgroundColor: #462ADF;
+  --DashboardTagOutlineColor: #756b95;
+
+
+  --DashboardTokenOverviewDividerColor: #756b95;
+  --DashboardTokenStatsNumberColor: #FFF;
+  --DashboardTokenStatsSubtitleColor: rgba(255, 255, 255, 0.753);
+  --DashboardTokenTickerColor: #fff;
+
+
+  --DashboardChartOutlineColor: #756b95;
+
+
+  --DashboardReadMoreContentTextColor: #FFF;
+  --DashboardReadMoreTextColor: #fff;
+  --DashboardReadMoreBackgroundColor: #2d2755;
+  --DashboardReadMoreDivTopBorderColor: #756b95;
+
+
+  --dashboardOutline: #756b95;
+  --dashboardStatBlockBackgroundColor: #6f7390;
+  --dashboardStatBlockOutlineColor: #0b3fad;
+
+  --dashboardChartSettingsButtonOutline: #756b95;
+  --dashboardChartSettingsButtonBackground: #2d2755;
+  --dashboardChartSettingsSelectedButtonBackground: #462adf;
+
+  --ibcTopTriangle: #462ADF;
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.categorySearchDroplist{
+
+  padding-top: 2.5px !important;
+  padding-bottom: 2.5px !important;
+
+  align-self: center !important;
+  justify-content: center !important;
+
+
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  font-family: phonk !important;
+
+
+  width: fit-content !important;
+
+  background: var(--navbtnbackground) !important;
+  color: var(--navbtn) !important;
+
+
+  outline: 2px solid var(--navbtnOutline) !important;
+
+  z-index: 2 !important;
+
+    height: 30px !important;
+
+}
+
+.categorySearchDroplist > div {
+
+  padding: 0px !important;
+  /* height: 30px !important; */
+  
+position: 0px !important;
+
+  background: var(--navbtnbackground) !important;
+  z-index: 2 !important;
+
+}
+
+.categorySearchDroplist > input {
+
+height: 30px !important;
+padding: 0px !important;
+
+
+}
+
+.categorySearchDroplist > div > div {
+
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  color: white !important;
+  z-index: 2 !important;
+}
+
+.dropdown.icon {
+  /* display: none; */
+
+  height: 30px !important;
+
+
+}
+
+
+
+
+
+
+.currentSearchBtn {
+
+  display: block;
+  position: relative;
+  
+  padding: 5px;
+  /* margin-inline: 15px; */
+
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: phonk;
+
+  background: var(--navbtnbackground);
+  color: var(--navbtn);
+  border: 2px solid var(--navbtnOutline);
+  border-bottom: 1px solid var(--navbtnborderbottom);
+
+  border-radius: 3px;
+
+  list-style: none;
+  text-align: left;
+
+
+}
+
+.searchbutton{
+
+  list-style: none;
+  position:absolute;
+
+  top: 50px;
+
+  border: 2px solid var(--navbtnOutline);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+}
+
+.showButton{
+
+  display: block;
+  position: relative;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: phonk;
+
+  padding-inline: 5px;
+
+  background: var(--navbtnbackground);
+  color: var(--navbtn);
+  border-bottom: 1px solid var(--navbtnborderbottom);
+
+  list-style: none;
+  text-align: left;
+  
+}
+
+
+.unselectedSearchButton{
+
+  display: none;
+}
+
+
+
+/* .searchbutton{
+
+position: relative;
+
+padding: 5px;
+margin-inline: 15px;
+
+font-size: 1.25rem;
+font-weight: 700;
+font-family: phonk;
+
+background: var(--navbtnbackground);
+color: var(--navbtn);
+outline: 2px solid var(--navbtnOutline);
+border-bottom: 1px solid var(--navbtnborderbottom);
+
+border-radius: 3px;
+
+list-style: none;
+text-align: left;
+
+} */
+
+
+
+
+
+
+#menuicon{
+
+  font-size: 50px;
+
+  line-height: 50px;
+
+  display: flex;
+  position: relative;
+
+  align-self: center;
+  padding-inline: 6px;
+
+  color: var(--menuIcon);
+
+}
+
+
+
+#mainbody {
+
+  background: var(--mainbodyBackground);
+  height: calc(100vh)
+
+}
+
+
+
+
+
+
+  
+.flipped{
+  rotate: 180deg;
+}
+
+.flopped{
+  rotate: 90deg;
+}
+
+.flop{
+  rotate: -90deg;
+}
+
+
+
+.explorebody{
+
+  display: flex;
+  position: relative;
+  
+  justify-content: center;
+  align-items: center;
+  
+  width: 100vw;
+  margin-top: 50px;
+
+
+}
+ 
+.articlediv{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  grid-gap: 24px;
+
+  justify-content: center;
+  align-items: center;
+  /* width: 70vw; */
+  width: 1200px;
+
+
+}
+
+

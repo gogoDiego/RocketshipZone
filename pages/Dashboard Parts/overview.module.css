@@ -1,0 +1,570 @@
+
+
+
+.StatsRowDiv{
+
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 1fr);
+
+    width: 100%;
+    margin-top: 12.5px;
+    grid-gap: 10px; 
+
+    height: 100px;
+
+}
+
+
+.StatsBlock{
+
+    display: block;
+    position: relative;
+
+    height: 100px;
+    width: 100px;
+
+    padding: 5px;
+
+    border-radius: 2.5px;
+
+    background-color: var(--dashboardStatBlockBackgroundColor);
+    outline: solid 1px var(--dashboardStatBlockOutlineColor);
+}
+
+.Stats2BlockWide{
+
+    display: block;
+    position: relative;
+
+    height: 100px;
+    width: 210px;
+
+    padding: 5px;
+
+    border-radius: 2.5px;
+
+    background-color: var(--dashboardStatBlockBackgroundColor);
+    outline: solid 1px var(--dashboardStatBlockOutlineColor);
+
+}
+
+
+.blockStatText{
+
+    font-weight: 500;
+    font-size: 18px;
+
+    height: 25%;
+
+    /* outline: solid red 1px; */
+}
+
+.blockStatNumber{
+
+    height: 50%;
+
+    font-size: 35px;
+
+    /* outline: solid red 1px; */
+
+}
+
+
+.overviewSub{
+  
+    margin: 0px;
+    margin-right: 5px;  
+  
+  }
+
+
+
+.overviewDash{
+
+    display: block;
+    position: relative;
+  
+    height: 295px;
+    width: 45%;
+  
+    margin-top: 6px;
+    padding-top: 6px;
+    /* overflow-y: visible; */
+    overflow: hidden;
+    /* overflow-y: inherit; */
+    /* overflow-y: unset; */
+  
+    margin-right: -8px;
+  
+  
+  
+  }
+
+
+  .overviewDivider{
+  
+    border: 1px solid var(--DashboardTokenOverviewDividerColor);
+    height:  290px;
+  
+    margin-top: 12px;
+  
+    border-radius: 5px;
+  
+  }
+
+
+
+
+.overviewStatsdiv{
+
+    display: flex;
+    position: relative;
+    
+}
+
+
+
+.overviewStats{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 110%;
+
+  }
+
+
+  .overviewTicker{
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1200;
+    font-family: phonk;
+    color: var(--DashboardTokenTickerColor);
+    height: 40px;
+    font-size: 30px;
+    margin-top: auto;
+  
+  
+  }
+
+
+
+.overviewStatRow{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+     
+    }
+    
+  
+   
+  
+  
+    .overviewChartDiv {
+  
+        display: block;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+      
+        margin-left: 6px;  
+      
+      }
+    
+    .dashcontent {
+
+  display: block;
+  position: relative;
+  
+
+}
+    
+    
+    
+    .dashboardChart {
+    
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 245px;
+      
+        border-radius: 7px;
+      
+        overflow: hidden;
+      
+        outline: 2px var(--DashboardChartOutlineColor) solid;
+      
+      }
+    
+    
+  
+    
+  
+  .StatSubtitle{
+  
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    color: var(--DashboardTokenStatsSubtitleColor);
+    
+    
+    }
+    
+    .StatNum{
+    
+      font-size: 30px;
+      font-weight: 900;
+      margin: 0;
+      color: var(--DashboardTokenStatsNumberColor);
+    
+    }
+
+.TokenDivider{
+
+    margin-top: 12px;
+    border: 1px solid var(--dashboardOutline);
+    border-radius: 5px;
+  
+    
+  }
+  
+
+  .overviewToken{
+
+    display: block;
+    position: relative;
+  
+    width: 55%;
+  
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+  
+}
+
+
+  .dashContentDiv {
+
+    display: flex;
+    position: relative;
+  
+    /* height: calc(100% - 95px); */
+    height: 100%;
+    width: 100%;  
+  
+    outline: solid 1px var(--dashContentOutline);
+    background: var(--dashContentBackground);
+  
+    /* border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; */
+  
+    margin: 0px !important;
+    padding: 0px !important;
+  
+    /* overflow:visible; */
+  
+    overflow-y: scroll;
+  
+  }
+
+
+.ChartOptions{
+
+    display: flex;
+
+    width: 100%;
+    height: 40px;
+
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.ChartType{
+
+    display: flex;
+    position: relative;
+
+    height: 25px;
+    width: fit-content;
+
+    border-radius: 6px;
+
+    border: 1px solid var(--dashboardChartSettingsButtonOutline);
+    background-color: var(--dashboardChartSettingsButtonBackground);
+    overflow: hidden;
+
+}
+
+.ChartTypeButton{
+
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 100%;
+    width: fit-content;
+
+    padding: 5px;
+
+
+}
+
+.ChartTypeButton:not(:last-child) {
+    border-inline-end: 1px solid var(--dashboardChartSettingsButtonOutline);
+  }
+
+
+.ChartTime{
+
+    display: flex;
+    position: relative;
+
+    height: 25px;
+    width: fit-content;
+
+    border-radius: 6px;
+
+    border: 1px solid var(--dashboardChartSettingsButtonOutline);
+    background-color: var(--dashboardChartSettingsButtonBackground);
+    overflow: hidden;
+
+}
+
+.selectedChartSetting{
+    background-color: var(--dashboardChartSettingsSelectedButtonBackground);
+}
+
+
+
+.expandLeft{
+
+
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-end; /* Shifts the div to the right */
+    text-align: center;
+    height: inherit;
+
+    padding: 12px;
+
+    border-left: var(--DashboardReadMoreDivTopBorderColor) solid 2px;
+    right: 0; /* Aligns the div to the right side */
+
+}
+
+.expandedRight {
+    width: 100% !important;
+  }
+
+  .overviewSubtitle{
+
+    display: flex;
+    position: relative;
+    align-items: center;
+  
+    font-weight: 800;
+  
+    color: var(--DashboardSubtitleTextColor);
+  
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 15px;
+  
+  
+    height: 50px;
+    font-size: 30px;
+
+  
+  }
+
+  .headlinegradent {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(360deg,#e1c4ff,#fbf5ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 0;
+    font-size: 46px;
+
+    padding-top: 6px;
+}
+
+ 
+  
+.overviewTags{
+  
+    display: flex;
+    position: relative;
+    margin-top: 12px;
+  
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 15px;
+  
+  }
+
+
+
+
+
+.overviewTag{
+
+    display: flex;
+    position: relative;
+  
+    justify-content: center;
+    align-items: center;
+  
+    background-color: var(--DashboardTagBackgroundColor);
+    color: var(--DashboardTagTextColor);
+  
+    font-size: 16px;
+    font-weight: 600;
+  
+    height: 30px;
+  
+    outline: 1px var(--DashboardTagOutlineColor) solid;
+    border-radius: 5px;
+    
+  
+    margin-right: 14px;
+    padding-inline: 7px;
+  
+  }
+
+
+
+.overviewprojectResources{
+
+
+    display: flex;
+    position: relative;
+  
+    padding: 5px;
+    padding-left: 6px;
+    padding-right: 15px;
+    margin-top: 8px;
+  
+    font-size: 18px;
+    font-weight: 700;
+  
+  
+  
+  }
+
+
+
+
+.readmoreDiv {
+    position: relative;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  
+
+  
+    width: calc(100% - 6px);
+    height: 50px;
+    
+  
+    /* bottom: -1px; */
+  
+  
+    background-color: var(--DashboardReadMoreBackgroundColor);
+  
+    border-top: var(--DashboardReadMoreDivTopBorderColor) solid 1px;
+    border-right: var(--DashboardReadMoreDivTopBorderColor) solid 2px;
+    border-bottom: var(--DashboardReadMoreDivTopBorderColor) solid 2px;
+
+    border-bottom-left-radius: 6px;
+    
+  
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+
+
+
+
+
+.readmoreDiv1 {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+  transition: all 0.3s ease-in-out;
+  color: var(--DashboardReadMoreTextColor);
+}
+  
+.overviewDescription{
+
+    display: block;
+    position: relative;
+    font-size: 16px;
+  
+    margin-top: 12px;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 15px;
+  
+  }
+  
+  
+.flipped{
+    rotate: 180deg;
+  }
+
+  .flopped{
+    rotate: 90deg;
+  }
+
+  .flop{
+    rotate: -90deg;
+  }
+
+
+
+.readmore {
+    margin-right: 2.5px;
+    margin-bottom: 0;
+  
+  }
+
+
+  .resourcesIcon{
+    width: 30px;
+    height: 30px;
+  
+    margin-inline: 5px ;
+  
+    filter: invert();
+  
+  }
+
+    
+  .downArrowIcon {
+    width: 20px;
+    height: 20px;
+    filter: invert();
+  }

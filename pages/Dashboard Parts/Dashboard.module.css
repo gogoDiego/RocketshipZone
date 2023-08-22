@@ -1,0 +1,359 @@
+
+
+.dashboarddiv {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100vw;
+    /* min-height: 452px; */
+    padding-top: 50px;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
+  }
+  
+
+.dashboard{
+
+  display: block;
+  position: relative;
+
+  width: 1200px;
+  height: 390px;
+  transition: height 0.5s ease;
+
+  background: var(--dashboardBackground);
+  color: var(--dashboardFontColor);
+  border: var(--dashboardOutline) solid 1px;
+  border-radius: 6px;
+  overflow: hidden;
+
+/* 
+  background-color: rgba(6, 25, 244, 0.5);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+
+
+  }
+
+
+
+
+
+
+  .expanded{
+    height: 800px;
+  }
+  
+  
+  
+  
+  .dashheader{
+  
+    display: flex;
+  
+    width: 100%;
+    height: 90px;
+  
+    align-items: center;
+  
+  }
+
+
+.dashtitle {
+
+    display: block;
+    position: relative;
+  
+  
+    padding-inline: 15px;
+  
+  
+}
+  
+  .ProjectDashboardLogo{
+  
+    height: 90px !important;
+    width:max-content;
+    padding-left: 6px;
+    
+}
+
+.dashnav{
+
+    display: inline-flex;
+  
+    padding-top: 25px;
+    padding-left: 25px;    
+    list-style: none;
+    font-family: sans-serif;
+  
+  
+}
+
+
+
+.selectedDashNav {
+
+    border-bottom: 3px var(--dashSelectedNavUnderline) solid;
+    
+  
+}
+  
+.unselectedDashNav {
+  
+    opacity: .65;
+}
+  
+  
+  .dashnav > li {
+  
+    padding-inline: 30px;
+    font-size: 1.65rem;
+  
+  }
+
+
+
+
+.dashcontent {
+
+  display: block;
+  position: relative;
+  
+
+}
+  
+.dashContentDiv {
+
+  display: flex;
+  position: relative;
+
+  /* height: calc(100% - 95px); */
+  height: 100%;
+  width: 100%;  
+
+  outline: solid 1px var(--dashContentOutline);
+  background: var(--dashContentBackground);
+
+  /* border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; */
+
+  margin: 0px !important;
+  padding: 0px !important;
+
+  /* overflow:visible; */
+
+  overflow-y: scroll;
+
+}
+
+
+
+
+
+
+.overviewDash::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scroll bar */
+}
+
+.overviewDash::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the color of the scroll bar thumb */
+}
+
+.overviewDash::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the color of the scroll bar track */
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+.overviewProjectEst{
+  
+    color: var(--DashboardEstTextColor);
+    font-size: 0.8em;
+  
+    padding-left: 6px;
+
+    height: 100%;
+    line-height: 47px;
+    
+  }
+  
+  
+ 
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .flipped{
+    rotate: 180deg;
+  }
+
+  .flopped{
+    rotate: 90deg;
+  }
+
+  .flop{
+    rotate: -90deg;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.projectTextContent{
+
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 15px;
+    color: var(--DashboardReadMoreContentTextColor)
+  
+  }
+  
+  .projectTextContent > h3 {
+  
+    margin: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  
+  }
+  
+  .projectTextContent > p {
+    text-indent: 24px;
+    font-size: 14px;
+  }
+  
+  .projectTextContent > ol{
+  
+    margin-left: 24px;
+  }
+  
+  .projectTextContent > ol > li {
+  
+    margin-top: 6px;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .ResourceSlideTitle{
+
+    font-size: 32px;
+    font-weight: 700;
+    font-family: phonk;
+    height: 75px;
+
+
+  }
+
+
+
+
+
+
+
+
+  .upArrow{
+    rotate: 180deg;
+  }
+  .downArrow{
+
+  }
+  .leftArrow{
+    rotate: 90deg;
+  }
+  .rightArrow{
+    rotate: -90deg;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .infoText{
+    display: block;
+    position: absolute;
+    padding: 0px;
+    font-size: 15px;
+    align-items: center; 
+    justify-content: center;
+
+    padding-right: 12px;
+    padding-top: 18px;
+
+    /* bottom: 2.5px; */
+  }
+
+
+
+  .selectedArticle{
+    background-color: #462ADF;
+    font-weight: 600;
+    padding-inline: 5px;
+    margin: 0px !important;
+
+    border-radius: 3px;
+  }
+
