@@ -126,8 +126,11 @@ export default function MainDashboard (){
 
         <>
             <Strategy
-        
+    
             />
+
+
+
         </>
         }
 

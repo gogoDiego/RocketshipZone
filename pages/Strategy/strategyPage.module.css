@@ -337,7 +337,265 @@
  }
 
 
- .explore{
+ .StratContent{
+
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+
+  font-size: 24px;
+
+
+  background: linear-gradient(to bottom, transparent 0%, var(--dashboardOutline) 90%);
+
+
+ }
+
+
+ .explorediv{
+
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+
+  color: var(--backgroundHeader);
+  background-color: var(--dashboardOutline);
+
+  width: 100%;
+  text-align: center;
+
+
+ }
+
+
+
+
+
+
+
+
+
+ .StrategyArticle{
+
+
+  display: flex;
+  position: relative;
+
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1200px;
+  height: 125px;
+
+  overflow: hidden;
+
+
+  color: var(--dashboardFontColor);
+  background-color: var(--dashContentBackground);
+  border: solid 1px var(--dashboardOutline);
+
+  border-radius: 3px;
+  
+ }
+
+ .ArticleCoverPhoto{
+
+  display: flex;
+  position: relative;
+
+  margin-left: 0px;
+
+  border-right: solid 1px var(--dashboardOutline);
+
+ }
+
+ .ArticleCoverPhotoDetails{
+
+
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 2.5%;
+  right: 2.5%;
+  width: 15px;
+  height: 15px;
+  color: var(--dashboardFontColor);
+  font-size: 12px;
+  font-weight: 900;
+
+  border: 1px solid transparent;
+  border-radius: 25px;
+  transition: .2s;
+
+ }
+
+
+ .ArticleCoverPhoto:hover .ArticleCoverPhotoDetails {
+  opacity: 1; /* Show the element on hover */
+  pointer-events: auto; /* Allow the element to capture events */
+  background-color: var(--backgroundHeader);
+  border-color: var(--dashboardOutline);
+}
+
+
+ .ArticleContent{
+
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 100%;
+  width: 55%;
+
+  padding-inline: 12px;
+
+
+  /* padding-inline: 12px;
+  padding-top: 6px; */
+
+  margin-left: 0px;
+
+  /* outline: solid yellow 3px; */
+
+ }
+
+ .ArticleHeader{
+
+  display: flex;
+  position: relative;
+
+  align-items: center;
+
+  padding-top: 6px;
+
+  width: 100%;
+  height: 50%;
+
+  outline: solid green 2px;
+ }
+
+ .ArticleTitle{
+
+  display: flex;
+  position: relative;
+
+  width: 66%;
+
+  font-size: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+  outline: solid blue 3px;
+
+ }
+
+ .ArticleTags{
+
+  display: flex;
+  position: relative;
+
+  justify-content: space-between;
+
+  width: 55%;
+  
+
+
+  /* outline: solid blue 3px; */
+
+ }
+
+
+ .tag{
+
+  display: flex;
+  position: relative;
+
+  height: 25px;
+  width: fit-content;
+  /* margin-inline: 6px; */
+  padding-inline: 3px;
+
+
+  background-color: var(--DashboardTagBackgroundColor);
+  border-radius: 3px;
+  border: 1px solid var(--dashboardOutline);
+
+ }
+
+ .tagtext{
+  padding: 3px;
+  font-weight: 700;
+  font-size: 18px;
+ }
+
+
+
+ .ArticleText{
+
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  font-size: 18px;
+  text-indent: 12px;
+
+
+  /* outline: dotted red 1px; */
+ }
+
+ .RiskAndYield{
+
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 10% ;
+
+
+  outline: dotted red 1px;
+
+ }
+
+ .articleOptions{
+  
+  display: block;
+  position: relative;
+
+  margin-left: auto;
+  width: 75px;
+  height: 100%;
+
+
+  outline: solid red 2px;
+ }
+
+
+
+ .SaveArticle{
 
   display: flex;
   position: relative;
@@ -346,9 +604,23 @@
   align-items: center;
 
   width: 100%;
+  height: 50%;
 
+  /* outline: solid red 2px; */
 
-  font-size: 24px;
+ }
 
+ .expandArticle{
+
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 50%;
+
+  outline: solid var(--dashboardOutline) 1px;
 
  }
