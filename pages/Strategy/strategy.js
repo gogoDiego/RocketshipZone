@@ -176,7 +176,7 @@ export default function Header (props) {
                         <p className={styles.ArticleText}>
                             The choice is yours anon...
 
-                            Stake $JUNO for 30% APR and 28 day lockup
+                            Stake $JUNO for 30% APR & 28 day lockup
 
                             or...
 
