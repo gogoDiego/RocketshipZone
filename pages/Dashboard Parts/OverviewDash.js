@@ -33,30 +33,31 @@ export default function OverviewDash (props){
 
 
 
-    async function fetchAssetPriceData(coingeckoAPILink) {
+    const fetchAssetPriceData = async (coingeckoAPILink) => {
         const apiUrl = coingeckoAPILink;
         const response = await fetch(apiUrl);
         const data = await response.json();
         const prices = data.prices.map((price) => ({
-          time: new Date(price[0]).toISOString().slice(0, 10),
-          value: price[1],
+            time: new Date(price[0]).toISOString().slice(0, 10),
+            value: price[1],
         }));
-        return prices.slice(0, -1); 
-      }
+        return prices.slice(0, -1);
+    };
       
-      async function main() {
-        const assetPriceData = await fetchAssetPriceData(props.props.chain.apiPriceLink);
-        return assetPriceData;
-      }
-
-
     useEffect(() => {
+        const main = async () => {
+            const assetPriceData = await fetchAssetPriceData(props.props.chain.apiPriceLink);
+            return assetPriceData;
+        };
+
         async function fetchData() {
-          const data = await main();
-          setChartData(data);
+            const data = await main();
+            setChartData(data);
         }
+
         fetchData();
-      }, [main]);
+    }, [props.props.chain.apiPriceLink]);
+
       
 
       

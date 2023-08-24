@@ -60,10 +60,11 @@ export default function Header (props) {
                             src={StablesImage}
                             height={100}
                             width={100}
+                            alt="StratCoverImage"
                         />
 
                         <div className={styles.explorediv}>
-                            <p> Explore > </p>
+                            <p> Explore </p>
                         </div>
                     </div>
                 </div>
@@ -140,6 +141,8 @@ export default function Header (props) {
                             src={PFP}
                             height={125}
                             width={125}
+                            alt="ArticleCoverImage"
+
                         />
                         <div className={styles.ArticleCoverPhotoDetails}>
                             <p> ⋯ </p>
@@ -159,6 +162,8 @@ export default function Header (props) {
                                         src={Osmologo}
                                         height={25}
                                         width={25}
+                                        alt="TagLogoImage"
+
                                     />
                                     <p className={styles.tagtext}> $JUNO </p>
                                 </div>
@@ -167,6 +172,7 @@ export default function Header (props) {
                                         src={OsmosisTypeface}
                                         height={30}
                                         width={90}
+                                        alt="TagTypeface"
                                     />
                                     {/* <p className={styles.tagtext}> Kujira </p> */}
                                 </div>
@@ -211,6 +217,7 @@ export default function Header (props) {
                                 src={DownArrowIcon}
                                 height={50}
                                 width={50}
+                                alt="downarrow"
                             />
                         </div>
                     </div>

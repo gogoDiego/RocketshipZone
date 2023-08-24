@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 //Icons
 import PlusIcon from "../../public/images/plus-icon.svg"
@@ -22,7 +23,12 @@ export default function DisplayRows (){
                         <p className='rowPrice rowTitle'> Price </p>
                         <p className='rowTvl rowTitle'> TVL </p>
                         <p className='rowMarketCap rowTitle'> MarketCap </p>
-                        <p className='plusicon'> <img src={GearIcon} alt='setting gear icon'/> </p>
+                        <p className='plusicon'> 
+                            <Image
+                                src={GearIcon}
+                                alt='setting gear icon'
+                            /> 
+                        </p>
                     </div>
 
                     <hr/>
@@ -31,14 +37,23 @@ export default function DisplayRows (){
                     
                         <div className='rowItemRank rowItemTitle'> <p> 1 </p> </div>
                         <div className='rowItemNamediv rowItemTitle'>
-                            <img src={Osmologo} alt="project logo" className='rowItemLogo'/>
+                            <Image
+                                src={Osmologo}
+                                alt="project logo"
+                                className='rowItemLogo'
+                            />
                             <p className='rowItemName'> Osmosis </p> 
                         </div>
                         <div className='rowItemCategory rowItemTitle'> <p> DeFi </p> </div>
                         <div className='rowItemPrice rowItemTitle'> <p> $1.2 </p> </div>
                         <div className='rowItemTvl rowItemTitle'> <p> $163.28m </p> </div>
                         <div className='rowItemMarketCap rowItemTitle'> <p> $453,449,152 </p> </div>
-                        <div className='rowItemBookmarket rowItemTitle'> <img src={PlusIcon} alt='plus icon'/> </div>
+                        <div className='rowItemBookmarket rowItemTitle'> 
+                            <img
+                                src={PlusIcon}
+                                alt='plus icon'
+                            />
+                        </div>
 
                     </div>
 

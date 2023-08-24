@@ -87,7 +87,7 @@ export const ConnectedShowAddress = ({
           defaultMaxLength[size as keyof typeof defaultMaxLength]
         )
       );
-  }, [address]);
+  }, [address, maxDisplayLength, size]);
 
   return (
     <Button
