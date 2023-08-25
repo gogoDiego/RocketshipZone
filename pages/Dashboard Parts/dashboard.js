@@ -43,7 +43,7 @@ export default function Dashboard (props){
                         />
                     </div>
 
-                    <ul className={styles.dashnav}>
+                    {/* <ul className={styles.dashnav}>
                         <li
                             className={dashNav === "Overview" ? styles.selectedDashNav : styles.unselectedDashNav}
                             onClick={() => setDashNav("Overview")}
@@ -68,11 +68,47 @@ export default function Dashboard (props){
                             className={dashNav === "Vote" ? styles.selectedDashNav : styles.unselectedDashNav}
                             onClick={() => setDashNav("Vote")}
                         > Vote </li>
-                        {/* <li
-                            className={dashNav === "NFT's" ? styles.selectedDashNav : styles.unselectedDashNav}
-                            onClick={() => setDashNav("NFT's")}
-                        > NFT's </li> */}
-                    </ul>
+                    </ul> */}
+
+                    <div className={styles.dashnav}>
+                        <div
+                            className={dashNav === "Overview" ? `${styles.selectedDashNav} ${styles.dashnavbtn} `: `${styles.unselectedDashNav} ${styles.dashnavbtn}`}
+                            onClick={() => setDashNav("Overview")}
+                        >
+                            <p> Overview </p>
+                        </div>
+                        <div
+                            className={dashNav === "Info" ? `${styles.selectedDashNav} ${styles.dashnavbtn}`: `${styles.unselectedDashNav} ${styles.dashnavbtn}`}
+                            onClick={() => setDashNav("Info")}
+                        >
+                            <p> Info </p>
+                        </div>
+                        <div
+                            className={dashNav === "Assets" ? `${styles.selectedDashNav} ${styles.dashnavbtn} `: `${styles.unselectedDashNav} ${styles.dashnavbtn}`}
+                            onClick={() => setDashNav("Assets")}
+                        >
+                            <p> Assets </p>
+                        </div>
+                        <div
+                            className={dashNav === "IBC" ? `${styles.selectedDashNav} ${styles.dashnavbtn} `: `${styles.unselectedDashNav} ${styles.dashnavbtn}`}
+                            onClick={() => setDashNav("IBC")}
+                        >
+                            <p> IBC </p>
+                        </div>
+                        <div
+                            className={dashNav === "Stake" ? `${styles.selectedDashNav} ${styles.dashnavbtn}`: `${styles.unselectedDashNav} ${styles.dashnavbtn}`}
+                            onClick={() => setDashNav("Stake")}
+                        >
+                            <p> Stake </p>
+                        </div>
+                        <div
+                            className={dashNav === "Vote" ? `${styles.selectedDashNav} ${styles.dashnavbtn}`: `${styles.unselectedDashNav} ${styles.dashnavbtn}`}
+                            onClick={() => setDashNav("Vote")}
+                        >
+                            <p> Vote </p>
+                        </div>
+
+                    </div>
 
                 </div>
 

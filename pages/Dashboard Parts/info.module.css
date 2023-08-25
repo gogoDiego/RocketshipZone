@@ -33,6 +33,42 @@
   }
 
 
+  @media (max-width: 750px) {
+
+
+    .dashContentDiv {
+
+      display: flex;
+      position: relative;
+    
+      /* height: calc(100% - 95px); */
+      height: 100%;
+      width: 100%;  
+    
+      outline: solid 1px var(--dashContentOutline);
+      background: var(--dashContentBackground);
+    
+      /* border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px; */
+    
+      margin: 0px !important;
+      padding: 0px !important;
+    
+      /* overflow:visible; */
+    
+      overflow-y: scroll;
+    
+    }
+
+
+
+
+
+  }
+
+
+
+
 
   .InfoReadingresources{
 

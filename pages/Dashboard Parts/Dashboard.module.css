@@ -11,6 +11,91 @@
     scrollbar-color: transparent transparent;
     scrollbar-width: thin;
   }
+
+  @media (max-width: 750px) {
+
+    .dashboarddiv {
+
+
+      outline: red solid 5px;
+      background-color: red;
+
+
+
+    }
+
+
+
+    .dashheader{
+  
+      display: flex;
+      position: relative;
+
+      flex-direction: column; 
+      /* align-items: center;
+      justify-content: center; */
+      
+      width: 100%;
+      height: max-content !important;
+    
+      padding: 0px;
+      margin: 0px;
+
+      padding-top: 6px
+    
+    }
+
+    .dashtitle {
+      /* margin-inline: 15px; */
+
+      padding: 0px;
+      margin: 0px;
+    
+  }
+
+
+    .ProjectDashboardLogo{
+
+      padding: 0px;
+      margin: 0px;
+  
+      
+  }
+
+    .dashnav{
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      width: 95vw;
+      padding: 0px !important;
+      margin-bottom: 6px;
+
+
+    
+      /* padding-top: 6px; */
+      /* padding-left: 0px;   
+      padding-inline: 12px;  */
+    
+    
+  }
+
+
+  .dashnavbtn {
+
+    padding-inline: 1em !important;
+    font-size: 1.5em !important;
+
+background-color: red;
+  }
+
+
+  }
+
+
+
+
   
 
 .dashboard{
@@ -68,7 +153,6 @@
   
     padding-inline: 15px;
   
-  
 }
   
   .ProjectDashboardLogo{
@@ -81,10 +165,10 @@
 
 .dashnav{
 
-    display: inline-flex;
+    display: flex;
   
     padding-top: 25px;
-    padding-left: 25px;    
+    padding-inline: 12px;    
     list-style: none;
     font-family: sans-serif;
   
@@ -93,24 +177,24 @@
 
 
 
-.selectedDashNav {
+  .selectedDashNav {
 
-    border-bottom: 3px var(--dashSelectedNavUnderline) solid;
+      border-bottom: 3px var(--dashSelectedNavUnderline) solid;
+      
     
+  }
+    
+  .unselectedDashNav {
+    
+      opacity: .65;
+  }
   
-}
-  
-.unselectedDashNav {
-  
-    opacity: .65;
-}
-  
-  
-  .dashnav > li {
-  
+
+  .dashnavbtn {
+
     padding-inline: 30px;
     font-size: 1.65rem;
-  
+
   }
 
 
