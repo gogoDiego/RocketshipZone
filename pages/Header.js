@@ -48,8 +48,8 @@ export default function Header (props) {
 
         </div>
 
-        <div className={styles.searchbtns}>
-          <div className={styles.searchbar}>
+        <div className={` ${styles.searchbtns} hideOnSmallScreen `} >
+          <div className={` ${styles.searchbar}  `}>
             <input
               type="text"
               className={styles.searchinput}

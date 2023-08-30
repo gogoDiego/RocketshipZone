@@ -4,6 +4,12 @@
 
     display: block;
     position: relative;
+
+    width: 100% !important;
+    height: fit-content;
+    
+
+    overflow-x: hidden;
   
 }
 
@@ -13,7 +19,6 @@
     display: flex;
     position: relative;
   
-    /* height: calc(100% - 95px); */
     height: 100%;
     width: 100%;  
   
@@ -32,6 +37,10 @@
   
   }
 
+  .showOnSmallScreen {
+    display: none !important;
+  }
+
 
   @media (max-width: 750px) {
 
@@ -40,10 +49,11 @@
 
       display: flex;
       position: relative;
+
+      flex-direction: column !important;
     
-      /* height: calc(100% - 95px); */
       height: 100%;
-      width: 100%;  
+      width: calc(100% - 24px) !important;
     
       outline: solid 1px var(--dashContentOutline);
       background: var(--dashContentBackground);
@@ -52,14 +62,69 @@
       border-bottom-right-radius: 6px; */
     
       margin: 0px !important;
-      padding: 0px !important;
+      padding: 12px !important;
     
-      /* overflow:visible; */
-    
-      overflow-y: scroll;
-    
+        
     }
 
+
+    .InfoReadingresources{
+
+      display: flex;
+      position: relative;
+    
+      width: 100% !important;
+      height: fit-content !important;
+  
+      padding: 0px !important;
+      margin: 0px !important;
+  
+    }
+
+    .infoResourcesSlide{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+
+      text-align: left;
+      justify-content: center;
+      align-items: center;
+
+      width: 100% !important;
+      /* height: fit-content !important; */
+      padding: 0px !important;
+      /* padding-top: 12px !important; */
+      margin: 0px !important;
+  
+    }
+
+
+
+  .infoprojectResources{
+
+
+    display: flex;
+    position: relative;
+
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    height: 50px;
+    width: 100% !important;
+
+
+  
+  }
+
+  .hideOnSmallScreen {
+    display: none !important;
+  }
+
+
+  .showOnSmallScreen {
+    display: flex !important;
+  }
 
 
 
@@ -67,13 +132,19 @@
   }
 
 
+  .LinkTreeDiv{
+    flex-direction: column;
+  }
+
 
 
 
   .InfoReadingresources{
 
-    display: block;
+    display: flex;
     position: relative;
+
+    flex-direction: column;
 
     width: 100%;
     height: 280px;
@@ -88,7 +159,7 @@
     position: relative;
     display: flex;
 
-    width: 100%;
+    width: 100% !important;
   }
 
   .tableContentsBullet{
@@ -133,6 +204,14 @@
     height: 100%;
   }
 
+  .infoText{
+
+
+    width: 100% !important;
+    height: 100%;
+
+  }
+
 
   .infoprojectResources{
 
@@ -156,11 +235,17 @@
 
   .slideFadedescription{
 
-    display: block;
+    display: flex;
     position: absolute;
 
+    justify-content: center;
+    align-items: center;
+    
+
     width: 100%;
-    height: 100%;
+    /* height: calc(100vw / 9); */
+
+    height: 100% !important;
 
     background: linear-gradient(to bottom, transparent, #2d2755);
     pointer-events: none; /* This makes the element non-clickable */
@@ -188,6 +273,16 @@
 
 .verticalSelctionsSlider{
 
+    /* display: flex;
+    position: relative;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+  
+    height: 100%;
+    min-width: 50px !important; */
+
     display: flex;
     flex-direction: column;
   
@@ -201,9 +296,32 @@
   }
   
 
+  .slideArrow{
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px !important;
+    height: 50px !important;
+  }
+
 
 
   .infoResourcesSlide{
+    /* display: flex;
+    position: relative;
+    flex-direction: column;
+
+
+    width: 55%;
+    height: 300px;
+    margin: 12px;
+
+
+    background-color: var(--dashboardBackground); */
+
     display: block;
     position: relative;
     width: min-content;
@@ -211,10 +329,20 @@
     margin: 12px;
     margin-left: auto; /* Push the div to the right */
 
+
+
   }
 
 
   .Displayingslide{
+
+    /* display: flex;
+    position: relative;
+
+    width: calc(100% - 50px) !important;
+
+    border-right: var(--dashboardOutline) solid 2px;
+    background-color: var(--dashboardBackground); */
 
     display: flex;
     position: relative;
@@ -225,11 +353,25 @@
     border-right: var(--dashboardOutline) solid 2px;
 
 
-
   }
 
   .ResourceSlideShow{
 
+    /* display: flex;
+    position: relative;
+
+    flex-direction: row;
+
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    border: var(--dashboardOutline) solid 2px;
+
+    border-radius: 6px;
+
+    overflow: hidden; */
     display: flex;
     position: relative;
 
@@ -243,6 +385,9 @@
     border-radius: 6px;
 
     overflow: hidden;
+
+
+
 
   }
 
@@ -287,8 +432,8 @@
   }
 
   .downArrowIcon {
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
     filter: invert();
   }
 
@@ -299,3 +444,134 @@
   .flop{
     rotate: -90deg;
   }
+
+  .ResourceLinkDiv{
+
+    display: flex;
+    position: relative;
+
+    width: 100%;
+    height: 50px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 12px;
+
+    border-radius: 25px;
+    background-color: var(--dashSelectedNavUnderline);
+    border: 1px solid transparent;
+  }
+
+  .ResourceLinkDiv:hover{
+
+    background-color: var(--dashContentBackground);
+    border: 1px solid var(--dashboardOutline);
+
+    transition: .25s;
+  }
+
+  .hideOnSmallScreen {
+    display: block;
+  }
+
+  
+
+
+  .ResourceLinkTitle{
+
+    display: flex;
+    position: relative;
+
+    padding-inline: 6px;
+    font-size: 18px;
+    font-weight: 500;
+
+
+
+  }
+
+
+  .LinkTreeDropdownListdiv{
+
+    background-color: var(--dashboardBackground);
+    outline: solid 1px var(--dashboardOutline);
+
+    border-radius: 12px;
+
+    padding: 3px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    height: fit-content;
+    transition: .2s;
+
+
+  }
+
+  .CloseLinkTreeDropdownListdiv{
+
+    height: fit-content;
+
+    display: none !important;
+    transition: .2s;
+
+
+  }
+
+
+  .LinkTreeDropdownList{
+
+    display: block;
+    position: relative;
+
+    right: 0px;
+
+
+    padding-inline: 12px;
+    /* padding-top: 6px; */
+    padding-bottom: 12px;
+
+  }
+
+
+  .ResourceDropdown{
+    display: flex;
+    position: relative;
+
+    justify-content: space-between;
+    align-items: center;
+
+    /* justify-content: center; */
+    align-items: center;
+
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-inline: 24px;
+    height: 50px;
+    width: 90%;
+
+
+
+
+  }
+
+.LinkTreeSectionTitle{
+
+  font-size: 28px;
+  font-weight: 800;
+
+  display: flex;
+
+  height: 50px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdownlistArrow{
+
+  display: flex;
+  position: relative;
+
+}

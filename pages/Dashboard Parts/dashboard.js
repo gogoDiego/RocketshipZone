@@ -11,6 +11,7 @@ import VoteDashboard from "../Dashboard Parts/voteDash.js"
 
 
 import styles from '/Users/diegotorres/RocketshipV2/pages/Dashboard Parts/Dashboard.module.css';
+import { Img } from "@chakra-ui/react";
 
 
 
@@ -19,6 +20,23 @@ export default function Dashboard (props){
 
     const [dashNav, setDashNav] = useState("Overview")
     const [expanded, setExpanded] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth <= 750) {
+            setDashNav("Info");
+          }
+        };
+    
+        // Call the function initially and listen for window resize
+        handleResize();
+        window.addEventListener('resize', handleResize);
+    
+        // Cleanup the event listener when the component unmounts
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
 
 
     useEffect(() => {
@@ -37,40 +55,11 @@ export default function Dashboard (props){
                         <Image
                             src={props.chain.logoTypeface}
                             alt="typeface logo"
-                            // height={90}
-                            // width="auto"
                             className={styles.ProjectDashboardLogo}
                         />
                     </div>
 
-                    {/* <ul className={styles.dashnav}>
-                        <li
-                            className={dashNav === "Overview" ? styles.selectedDashNav : styles.unselectedDashNav}
-                            onClick={() => setDashNav("Overview")}
-                        > Overview </li>
-                        <li
-                            className={dashNav === "Info" ? styles.selectedDashNav : styles.unselectedDashNav}
-                            onClick={() => setDashNav("Info")}
-                        > Info </li>
-                        <li
-                            className={dashNav === "Assets" ? styles.selectedDashNav : styles.unselectedDashNav}
-                            onClick={() => setDashNav("Assets")}
-                        > Assets </li>
-                        <li
-                            className={dashNav === "IBC" ? styles.selectedDashNav : styles.unselectedDashNav}
-                            onClick={() => setDashNav("IBC")}
-                        > IBC </li>
-                        <li
-                            className={dashNav === "Stake" ? styles.selectedDashNav : styles.unselectedDashNav}
-                            onClick={() => setDashNav("Stake")}
-                        > Stake </li>
-                        <li
-                            className={dashNav === "Vote" ? styles.selectedDashNav : styles.unselectedDashNav}
-                            onClick={() => setDashNav("Vote")}
-                        > Vote </li>
-                    </ul> */}
-
-                    <div className={styles.dashnav}>
+                    <div className={` ${styles.dashnav} ${styles.hideOnSmallScreen}`}>
                         <div
                             className={dashNav === "Overview" ? `${styles.selectedDashNav} ${styles.dashnavbtn} `: `${styles.unselectedDashNav} ${styles.dashnavbtn}`}
                             onClick={() => setDashNav("Overview")}
@@ -109,6 +98,10 @@ export default function Dashboard (props){
                         </div>
 
                     </div>
+
+                    <p className={`${styles.linktreeDescription} ${styles.showOnSmallScreen}`}>
+                        {props.chain.description}
+                    </p>
 
                 </div>
 

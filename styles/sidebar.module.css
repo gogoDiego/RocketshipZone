@@ -1,7 +1,6 @@
 
 
 
-
 .sidebardiv{
     display: block;
     position: fixed;
@@ -77,3 +76,15 @@
     background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.276) 0%, transparent 75%);
 
 }
+
+
+@media (max-width: 750px) {
+
+
+    .hideOnSmallScreen {
+      display: none !important;
+  
+    }
+  
+  
+   }

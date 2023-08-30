@@ -15,6 +15,9 @@ import styles from '/Users/diegotorres/RocketshipV2/pages/DisplayTypes/articles.
 export default function DisplayArticles (props){
 
 
+    console.log(props)
+
+
     return(
 
     <div className={styles.article}>
@@ -40,12 +43,21 @@ export default function DisplayArticles (props){
                     />
                 </div>
 
+                <div className={styles.articleTagsDiv}>
+
+                    {props.chain.tags.slice(0, 2).map((tag, index) => (
+                    <div 
+                        className={styles.articleTags}
+                        key={index}
+                        >
+                        <p>{tag}</p>
+                    </div>
+                ))}
+                </div>
+
                 <p className={styles.articleDescription}> {props.chain.articleDescription} </p>
 
                 <div className={styles.articleButtonDiv}>
-                    <button className={styles.articleButton}>
-                        <p> Launch </p>
-                    </button>
                     <button
                         className={styles.articleButton}
                         onClick={() => props.setTargetChainID(props.chain.id)}
@@ -53,13 +65,13 @@ export default function DisplayArticles (props){
                         <p> Explore </p>
                     </button>
 
-                    <Image
+                    {/* <Image
                         src={PlusIcon}
                         alt='plus icon'
                         className={styles.PlusIcon}
                         width={25}
                         height={25}
-                    />
+                    /> */}
                     
                 </div>
 

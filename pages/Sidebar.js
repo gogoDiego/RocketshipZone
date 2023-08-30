@@ -16,7 +16,7 @@ export default function Sidebar (props,setModes){
 
     return(
 
-    <div className={styles.sidebardiv}>
+    <div className={`${styles.sidebardiv} hideOnSmallScreen`}>
 
         <div className={styles.sidebar}>
 

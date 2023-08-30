@@ -122,6 +122,33 @@
 
 
 
+ @media (max-width: 750px) {
+
+
+  .hideOnSmallScreen {
+    display: none !important;
+
+  }
+
+
+  .articlediv{
+
+    display: grid;
+    grid-template-columns: 1fr !important;
+
+    justify-items: center; /* Center horizontally */
+    align-items: center;
+
+    width: 100%;
+  }
+  
+
+
+
+
+ }
+
+
 
 
 
@@ -321,7 +348,10 @@ text-align: left;
 #mainbody {
 
   background: var(--mainbodyBackground);
-  height: calc(100vh)
+
+  min-height: 100vh;
+  height: max-content;
+  
 
 }
 
@@ -362,7 +392,7 @@ text-align: left;
 .articlediv{
   
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(588px, 1fr));
   grid-gap: 24px;
 
   justify-content: center;

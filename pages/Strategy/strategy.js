@@ -53,15 +53,24 @@ export default function Header (props) {
 
                     <div className={styles.StratContent}>
 
-                        <p> up to 9% yield</p>
+                        <p className={styles.StratSubTitle}
+                        >
+                            up to 9% yield
+                        </p>
+
+                        <div className={styles.StratImage}>
+                            <Image
+                                src={StablesImage}
+                                alt="StratCoverImage"
+                            />
+                        </div>
 
 
-                        <Image
-                            src={StablesImage}
-                            height={100}
-                            width={100}
-                            alt="StratCoverImage"
-                        />
+                        <p
+                            className={styles.StratDescription}
+                        >
+                            Safer, Slower & Steady Yield on Stables
+                        </p>
 
                         <div className={styles.explorediv}>
                             <p> Explore </p>
