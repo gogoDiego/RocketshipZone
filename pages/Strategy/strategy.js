@@ -4,7 +4,8 @@ import Image from 'next/image';
 import DownArrowIcon from "../../public/images/down.png"
 import PlusIcon from "../../public/images/plus-icon.svg"
 
-
+import KujiraLogo from "/Users/diegotorres/RocketshipV2/public/images/kujira.png"
+import JunoLogo from "/Users/diegotorres/RocketshipV2/public/images/Juno Logo (Salmon).svg"
 import StablesImage from "/Users/diegotorres/RocketshipV2/public/images/stables.png"
 import PFP from "/Users/diegotorres/RocketshipV2/public/images/pfp.jpeg"
 
@@ -24,6 +25,15 @@ import styles from '/Users/diegotorres/RocketshipV2/pages/Strategy/strategyPage.
 
 
 export default function Header (props) {
+
+
+
+
+    const [isChecked, setIsChecked] = useState(false);
+    
+    const toggleCheckbox = () => {
+        setIsChecked(!isChecked);
+    };
 
 
 
@@ -143,93 +153,174 @@ export default function Header (props) {
 
     <div className="explorebody">
 
-                <div className={styles.StrategyArticle}>
-                    
-                    <div className={styles.ArticleCoverPhoto}>
-                        <Image
-                            src={PFP}
-                            height={125}
-                            width={125}
-                            alt="ArticleCoverImage"
+                <div className={styles.StrategyArticlediv}>
 
-                        />
-                        <div className={styles.ArticleCoverPhotoDetails}>
-                            <p> ⋯ </p>
+                    <div className={styles.StrategyArticle}>
+
+                        <div className={styles.ArticleCoverPhoto}>
+                            <Image
+                                src={PFP}
+                                height={100}
+                                width={100}
+                                alt="ArticleCoverImage"
+
+                            />
+                            <div className={styles.ArticleCoverPhotoDetails}>
+                                <p> ⋯ </p>
+                            </div>
                         </div>
+
+                        <div className={styles.ArticleContent}>
+                            <div className={styles.ArticleHeader}>
+                                <h1 className={styles.ArticleTitle}> Lend $JUNO on Kujira </h1>
+                                <div className={styles.ArticleTags}>
+                                    <div className={styles.tag}>
+                                        <p className={styles.tagtext}> Lending </p>
+                                    </div>
+                                    <div className={styles.tag}>
+                                        <Image
+                                            src={Osmologo}
+                                            height={25}
+                                            width={25}
+                                            alt="TagLogoImage"
+
+                                        />
+                                        <p className={styles.tagtext}> $JUNO </p>
+                                    </div>
+                                    <div className={styles.tag}>
+                                        <Image
+                                            src={OsmosisTypeface}
+                                            height={30}
+                                            width={90}
+                                            alt="TagTypeface"
+                                        />
+                                        {/* <p className={styles.tagtext}> Kujira </p> */}
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p className={styles.ArticleText}>
+                                The choice is yours anon...
+
+                                Stake $JUNO for 30% APR & 28 day lockup
+
+                                or...
+
+                                Lend it on ghost for much higher APR and no lockup with interest earned every 3 seconds.
+                            </p>
+                        </div>
+
+                        <div className={styles.Risk}>
+                            <div>
+                            {/* <GaugeChart
+                                id="gauge-chart1"
+                                width={100}
+                                height={50}
+                            /> */}
+                                <p> High Risk </p>
+                            </div>
+                        </div>
+
+                        <div className={styles.Yield}>
+                            <h1> 108% </h1>
+                            <h1> APR </h1>
+                        </div>
+
+                        <div className={styles.expandArticlebuttonDiv}>
+                            <div className={styles.expandArticlebutton}>
+                                <Image
+                                    src={DownArrowIcon}
+                                    height={35}
+                                    width={35}
+                                    alt="downarrow"
+                                />
+                            </div>
+                        </div>
+
                     </div>
+                    
+                    <div className={styles.extendedArticle}>
 
+                            <div className={styles.StepDiv}>
 
-                    <div className={styles.ArticleContent}>
-                        <div className={styles.ArticleHeader}>
-                            <h1 className={styles.ArticleTitle}> Lend $JUNO on Kujira </h1>
-                            <div className={styles.ArticleTags}>
-                                <div className={styles.tag}>
-                                    <p className={styles.tagtext}> Lending </p>
-                                </div>
-                                <div className={styles.tag}>
+                                <div className={styles.StratStepCoverPhoto}>
                                     <Image
-                                        src={Osmologo}
-                                        height={25}
-                                        width={25}
-                                        alt="TagLogoImage"
+                                        width={50}
+                                        height={50}
+                                        src={JunoLogo}
+                                        // className={styles.}
+                                    />
+                                    <p className={styles.StratStepPhotoSub}> JUNO </p>
+                                </div>
 
-                                    />
-                                    <p className={styles.tagtext}> $JUNO </p>
+                                <div>
+
+                                    <h1> Select</h1>
+
+                                    <div className={styles.AssetSelector}>
+                                        <div>
+                                            <p> UnStake </p>
+                                        </div>
+                                        <div>
+                                            <p> buy </p>
+                                        </div>
+                                    </div>
+                                
+
+
                                 </div>
-                                <div className={styles.tag}>
-                                    <Image
-                                        src={OsmosisTypeface}
-                                        height={30}
-                                        width={90}
-                                        alt="TagTypeface"
-                                    />
-                                    {/* <p className={styles.tagtext}> Kujira </p> */}
+
+                                <div>
+                                    <h1> → </h1>
                                 </div>
+
+                                <div>
+                                
+                                    <h1> Deposit</h1>
+
+                                </div>
+
+                                <div className={styles.checkboxDiv}>
+                                    <div
+                                        className={`${styles.checkbox} ${isChecked ? styles.checked : ''}`}
+                                        onClick={toggleCheckbox}
+                                    >
+                                        {isChecked && <> ✔ </>}
+                                    </div>
+                                </div>
+
+
+                                
                             </div>
 
-                        </div>
-                        <p className={styles.ArticleText}>
-                            The choice is yours anon...
+                            <hr className={styles.stratStepHR}/>
 
-                            Stake $JUNO for 30% APR & 28 day lockup
+                            <div className={styles.StepDiv}>
 
-                            or...
+                                <div className={styles.StratStepCoverPhoto}>
+                                    <Image
+                                        width={50}
+                                        height={50}
+                                        src={KujiraLogo}
+                                        // className={styles.}
+                                    />
+                                    <p className={styles.StratStepPhotoSub}> Lend </p>
+                                </div>
 
-                            Lend it on ghost for much higher APR and no lockup with interest earned every 3 seconds.
-                        </p>
+
+
+
+
+                                <div>
+                                    
+                                </div>
+                                
+                            </div>
+
+                            
+
                     </div>
 
-                    <div className={styles.RiskAndYield}>
-                        <h1> 108% APR</h1>
-                        <div>
-                        {/* <GaugeChart
-                            id="gauge-chart1"
-                            width={100}
-                            height={50}
-                        /> */}
-                            <p> High Risk </p>
-                        </div>
-                    </div>
-                    
-
-                    <div className={styles.articleOptions}>
-                        <div className={styles.SaveArticle}>
-                            {/* <Image
-                                src={PlusIcon}
-                                height={75}
-                                width={75}
-                            /> */}
-
-                        </div>
-                        <div className={styles.expandArticle}>
-                            <Image
-                                src={DownArrowIcon}
-                                height={50}
-                                width={50}
-                                alt="downarrow"
-                            />
-                        </div>
-                    </div>
 
 
                 </div>

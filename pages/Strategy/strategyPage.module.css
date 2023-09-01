@@ -431,6 +431,15 @@
 
 
 
+ .StrategyArticlediv{
+
+  display: block;
+  position: relative;
+
+
+
+ }
+
 
 
  .StrategyArticle{
@@ -443,13 +452,10 @@
   align-items: center;
 
   width: 1200px;
-  height: 125px;
-
-  overflow: hidden;
-
+  height: 100px;
 
   color: var(--dashboardFontColor);
-  background-color: var(--dashContentBackground);
+  background-color: var(--backgroundHeader);
   border: solid 1px var(--dashboardOutline);
 
   border-radius: 3px;
@@ -460,6 +466,9 @@
 
   display: flex;
   position: relative;
+
+  width: 100px;
+  height: 100px;
 
   margin-left: 0px;
 
@@ -609,7 +618,7 @@
   /* outline: dotted red 1px; */
  }
 
- .RiskAndYield{
+ .Yield{
 
   display: flex;
   position: relative;
@@ -624,47 +633,158 @@
 
  }
 
- .articleOptions{
+
+ .Risk{
+
+
+
+
+ }
+
+ .expandArticlebuttonDiv{
   
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+
+
+  /* outline: solid red 2px; */
+ }
+
+
+
+
+ .expandArticlebutton{
+
+  display: flex;
+  position: relative;
+
+
+  filter: invert(1);
+
+ }
+
+
+
+ .extendedArticle{
+
   display: block;
   position: relative;
 
+  width: 100%;
+  height: max-content;
+
+  background-color: var(--dashContentBackground);
+  border: 1px solid var(--dashboardOutline);
+
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+ }
+
+
+ .StepDiv{
+
+  display: flex;
+
+  /* justify-content: space-between; */
+
+  width: 100%;
+  height: 100px;
+
+  margin-top: 6px;
+  margin-bottom: 6px;
+
+ }
+
+ .stratStepHR{
+
+  border: 1px solid var(--dashboardOutline);
+  margin-inline: 6px;
+
+ }
+
+
+ .StratStepCoverPhoto{
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+
+
+ }
+
+
+ .StratStepPhotoSub{
+/* 
+  display: block;
+  position: absolute; */
+
+  /* bottom: 0px; */
+
+  font-size: 22px;
+  color: white;
+  font-family: phonk;
+
+ }
+
+
+ .AssetSelector{
+
+  width: 500px;
+  height: 95%;
+
+  outline: solid red 1px;
+ }
+
+
+ .checkboxDiv{
+
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
   margin-left: auto;
-  width: 75px;
-  height: 100%;
+
+  width: 100px;
+  height: 100px;
 
 
-  /* outline: solid red 2px; */
+  outline: solid red 1px;
+
  }
 
 
-
- .SaveArticle{
-
+ .checkbox {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 2px solid #999;
+  border-radius: 4px;
   display: flex;
-  position: relative;
-
-  justify-content: center;
   align-items: center;
-
-  width: 100%;
-  height: 50%;
-
-  /* outline: solid red 2px; */
-
- }
-
- .expandArticle{
-
-  display: flex;
-  position: relative;
-
   justify-content: center;
-  align-items: center;
+  cursor: pointer;
+}
 
-  width: 100%;
-  height: 50%;
+/* Styling for the checked state */
+.checkbox.checked {
+  background-color: var(--DashboardTagBackgroundColor);
+  border:  1px solid var(--dashContentOutline);
+  color: white;
+}
 
-  outline: solid var(--dashboardOutline) 1px;
 
- }
+
